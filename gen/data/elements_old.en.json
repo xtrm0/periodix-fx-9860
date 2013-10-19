@@ -1,0 +1,1681 @@
+{
+    "1": {
+        "name": "Hydrogen",
+        "symbol": "H",
+        "Z": "1",
+        "atomic_weight": "1.00794",
+        "atomic_radius": "79",
+        "pauling_negativity": "2.2",
+        "electronic_configuration": "1s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "2": {
+        "name": "Helium",
+        "symbol": "He",
+        "Z": "2",
+        "atomic_weight": "4.002602",
+        "atomic_radius": "0.0",
+        "pauling_negativity": "-",
+        "electronic_configuration": "1s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "3": {
+        "name": "Lithium",
+        "symbol": "Li",
+        "Z": "3",
+        "atomic_weight": "6.941",
+        "atomic_radius": "155",
+        "pauling_negativity": "0.98",
+        "electronic_configuration": "[He]2s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "4": {
+        "name": "Beryllium",
+        "symbol": "Be",
+        "Z": "4",
+        "atomic_weight": "9.01218",
+        "atomic_radius": "112",
+        "pauling_negativity": "1.57",
+        "electronic_configuration": "[He]2s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "5": {
+        "name": "Boron",
+        "symbol": "B",
+        "Z": "5",
+        "atomic_weight": "10.811",
+        "atomic_radius": "98",
+        "pauling_negativity": "2.04",
+        "electronic_configuration": "[He]2s²2p¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "6": {
+        "name": "Carbon",
+        "symbol": "C",
+        "Z": "6",
+        "atomic_weight": "12.011",
+        "atomic_radius": "91",
+        "pauling_negativity": "2.55",
+        "electronic_configuration": "[He]2s²2p²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "7": {
+        "name": "Nitrogen",
+        "symbol": "N",
+        "Z": "7",
+        "atomic_weight": "14.00674",
+        "atomic_radius": "92",
+        "pauling_negativity": "3.04",
+        "electronic_configuration": "[He]2s²2p³",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "8": {
+        "name": "Oxygen",
+        "symbol": "O",
+        "Z": "8",
+        "atomic_weight": "15.9994",
+        "atomic_radius": "-",
+        "pauling_negativity": "3.44",
+        "electronic_configuration": "[He]2s²2p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "9": {
+        "name": "Fluorine",
+        "symbol": "F",
+        "Z": "9",
+        "atomic_weight": "18.998403",
+        "atomic_radius": "-",
+        "pauling_negativity": "3.98",
+        "electronic_configuration": "[He]2s²2p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "10": {
+        "name": "Neon",
+        "symbol": "Ne",
+        "Z": "10",
+        "atomic_weight": "20.1797",
+        "atomic_radius": "-",
+        "pauling_negativity": "0.0",
+        "electronic_configuration": "[He]2s²2p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "11": {
+        "name": "Sodium",
+        "symbol": "Na",
+        "Z": "11",
+        "atomic_weight": "22.989768",
+        "atomic_radius": "190",
+        "pauling_negativity": "0.93",
+        "electronic_configuration": "[Ne]3s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "12": {
+        "name": "Magnesium",
+        "symbol": "Mg",
+        "Z": "12",
+        "atomic_weight": "24.305",
+        "atomic_radius": "160",
+        "pauling_negativity": "1.31",
+        "electronic_configuration": "[Ne]3s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "13": {
+        "name": "Aluminum",
+        "symbol": "Al",
+        "Z": "13",
+        "atomic_weight": "26.981539",
+        "atomic_radius": "143",
+        "pauling_negativity": "1.61",
+        "electronic_configuration": "[Ne]3s²3p¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "14": {
+        "name": "Silicon",
+        "symbol": "Si",
+        "Z": "14",
+        "atomic_weight": "28.0855",
+        "atomic_radius": "132",
+        "pauling_negativity": "1.9",
+        "electronic_configuration": "[Ne]3s²3p²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "15": {
+        "name": "Phosphorus",
+        "symbol": "P",
+        "Z": "15",
+        "atomic_weight": "30.973762",
+        "atomic_radius": "128",
+        "pauling_negativity": "2.19",
+        "electronic_configuration": "[Ne]3s²3p³",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "16": {
+        "name": "Sulfur",
+        "symbol": "S",
+        "Z": "16",
+        "atomic_weight": "32.066",
+        "atomic_radius": "127",
+        "pauling_negativity": "2.58",
+        "electronic_configuration": "[Ne]3s²3p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "17": {
+        "name": "Chlorine",
+        "symbol": "Cl",
+        "Z": "17",
+        "atomic_weight": "35.4527",
+        "atomic_radius": "-",
+        "pauling_negativity": "3.16",
+        "electronic_configuration": "[Ne]3s²3p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "18": {
+        "name": "Argon",
+        "symbol": "Ar",
+        "Z": "18",
+        "atomic_weight": "39.948",
+        "atomic_radius": "2-",
+        "pauling_negativity": "0.0",
+        "electronic_configuration": "[Ne]3s²3p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "19": {
+        "name": "Potassium",
+        "symbol": "K",
+        "Z": "19",
+        "atomic_weight": "39.0983",
+        "atomic_radius": "235",
+        "pauling_negativity": "0.82",
+        "electronic_configuration": "[Ar]4s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "20": {
+        "name": "Calcium",
+        "symbol": "Ca",
+        "Z": "20",
+        "atomic_weight": "40.078",
+        "atomic_radius": "197",
+        "pauling_negativity": "1.0",
+        "electronic_configuration": "[Ar]4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "21": {
+        "name": "Scandium",
+        "symbol": "Sc",
+        "Z": "21",
+        "atomic_weight": "44.95591",
+        "atomic_radius": "162",
+        "pauling_negativity": "1.36",
+        "electronic_configuration": "[Ar]3d¹4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "22": {
+        "name": "Titanium",
+        "symbol": "Ti",
+        "Z": "22",
+        "atomic_weight": "47.88",
+        "atomic_radius": "147",
+        "pauling_negativity": "1.54",
+        "electronic_configuration": "[Ar]3d²4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "23": {
+        "name": "Vanadium",
+        "symbol": "V",
+        "Z": "23",
+        "atomic_weight": "50.9415",
+        "atomic_radius": "134",
+        "pauling_negativity": "1.63",
+        "electronic_configuration": "[Ar]3d³4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "24": {
+        "name": "Chromium",
+        "symbol": "Cr",
+        "Z": "24",
+        "atomic_weight": "51.9961",
+        "atomic_radius": "130",
+        "pauling_negativity": "1.66",
+        "electronic_configuration": "[Ar]3d4s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "25": {
+        "name": "Manganese",
+        "symbol": "Mn",
+        "Z": "25",
+        "atomic_weight": "54.93805",
+        "atomic_radius": "135",
+        "pauling_negativity": "1.55",
+        "electronic_configuration": "[Ar]3d4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "26": {
+        "name": "Iron",
+        "symbol": "Fe",
+        "Z": "26",
+        "atomic_weight": "55.847",
+        "atomic_radius": "126",
+        "pauling_negativity": "1.83",
+        "electronic_configuration": "[Ar]3d4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "27": {
+        "name": "Cobalt",
+        "symbol": "Co",
+        "Z": "27",
+        "atomic_weight": "58.9332",
+        "atomic_radius": "125",
+        "pauling_negativity": "1.88",
+        "electronic_configuration": "[Ar]3d4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "28": {
+        "name": "Nickel",
+        "symbol": "Ni",
+        "Z": "28",
+        "atomic_weight": "58.6934",
+        "atomic_radius": "124",
+        "pauling_negativity": "1.91",
+        "electronic_configuration": "[Ar]3d4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "29": {
+        "name": "Copper",
+        "symbol": "Cu",
+        "Z": "29",
+        "atomic_weight": "63.546",
+        "atomic_radius": "128",
+        "pauling_negativity": "1.9",
+        "electronic_configuration": "[Ar]3d¹4s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "30": {
+        "name": "Zinc",
+        "symbol": "Zn",
+        "Z": "30",
+        "atomic_weight": "65.39",
+        "atomic_radius": "138",
+        "pauling_negativity": "1.65",
+        "electronic_configuration": "[Ar]3d¹4s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "31": {
+        "name": "Gallium",
+        "symbol": "Ga",
+        "Z": "31",
+        "atomic_weight": "69.723",
+        "atomic_radius": "141",
+        "pauling_negativity": "1.81",
+        "electronic_configuration": "[Ar]3d¹4s²4p¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "32": {
+        "name": "Germanium",
+        "symbol": "Ge",
+        "Z": "32",
+        "atomic_weight": "72.61",
+        "atomic_radius": "137",
+        "pauling_negativity": "2.01",
+        "electronic_configuration": "[Ar]3d¹4s²4p²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "33": {
+        "name": "Arsenic",
+        "symbol": "As",
+        "Z": "33",
+        "atomic_weight": "74.92159",
+        "atomic_radius": "139",
+        "pauling_negativity": "2.18",
+        "electronic_configuration": "[Ar]3d¹4s²4p³",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "34": {
+        "name": "Selenium",
+        "symbol": "Se",
+        "Z": "34",
+        "atomic_weight": "78.96",
+        "atomic_radius": "140",
+        "pauling_negativity": "2.55",
+        "electronic_configuration": "[Ar]3d¹4s²4p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "35": {
+        "name": "Bromine",
+        "symbol": "Br",
+        "Z": "35",
+        "atomic_weight": "79.904",
+        "atomic_radius": "-",
+        "pauling_negativity": "2.96",
+        "electronic_configuration": "[Ar]3d¹4s²4p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "36": {
+        "name": "Krypton",
+        "symbol": "Kr",
+        "Z": "36",
+        "atomic_weight": "83.8",
+        "atomic_radius": "-",
+        "pauling_negativity": "0.0",
+        "electronic_configuration": "[Ar]3d¹4s²4p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "37": {
+        "name": "Rubidium",
+        "symbol": "Rb",
+        "Z": "37",
+        "atomic_weight": "85.4678",
+        "atomic_radius": "248",
+        "pauling_negativity": "0.82",
+        "electronic_configuration": "[Kr]5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "38": {
+        "name": "Strontium",
+        "symbol": "Sr",
+        "Z": "38",
+        "atomic_weight": "87.62",
+        "atomic_radius": "215",
+        "pauling_negativity": "0.95",
+        "electronic_configuration": "[Kr]5s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "39": {
+        "name": "Yttrium",
+        "symbol": "Y",
+        "Z": "39",
+        "atomic_weight": "88.90585",
+        "atomic_radius": "178",
+        "pauling_negativity": "1.22",
+        "electronic_configuration": "[Kr]4d¹5s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "40": {
+        "name": "Zirconium",
+        "symbol": "Zr",
+        "Z": "40",
+        "atomic_weight": "91.224",
+        "atomic_radius": "160",
+        "pauling_negativity": "1.33",
+        "electronic_configuration": "[Kr]4d²5s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "41": {
+        "name": "Niobium",
+        "symbol": "Nb",
+        "Z": "41",
+        "atomic_weight": "92.90638",
+        "atomic_radius": "146",
+        "pauling_negativity": "1.6",
+        "electronic_configuration": "[Kr]4d5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "42": {
+        "name": "Molybdenum",
+        "symbol": "Mo",
+        "Z": "42",
+        "atomic_weight": "95.94",
+        "atomic_radius": "139",
+        "pauling_negativity": "2.16",
+        "electronic_configuration": "[Kr]4d5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "43": {
+        "name": "Technetium",
+        "symbol": "Tc",
+        "Z": "43",
+        "atomic_weight": "97.9072",
+        "atomic_radius": "136",
+        "pauling_negativity": "1.9",
+        "electronic_configuration": "[Kr]4d5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "44": {
+        "name": "Ruthenium",
+        "symbol": "Ru",
+        "Z": "44",
+        "atomic_weight": "101.07",
+        "atomic_radius": "134",
+        "pauling_negativity": "2.2",
+        "electronic_configuration": "[Kr]4d5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "45": {
+        "name": "Rhodium",
+        "symbol": "Rh",
+        "Z": "45",
+        "atomic_weight": "102.9055",
+        "atomic_radius": "134",
+        "pauling_negativity": "2.28",
+        "electronic_configuration": "[Kr]4d5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "46": {
+        "name": "Palladium",
+        "symbol": "Pd",
+        "Z": "46",
+        "atomic_weight": "106.42",
+        "atomic_radius": "137",
+        "pauling_negativity": "2.2",
+        "electronic_configuration": "[Kr]4d5s",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "47": {
+        "name": "Silver",
+        "symbol": "Ag",
+        "Z": "47",
+        "atomic_weight": "107.8682",
+        "atomic_radius": "144",
+        "pauling_negativity": "1.93",
+        "electronic_configuration": "[Kr]4d5s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "48": {
+        "name": "Cadmium",
+        "symbol": "Cd",
+        "Z": "48",
+        "atomic_weight": "112.411",
+        "atomic_radius": "154",
+        "pauling_negativity": "1.69",
+        "electronic_configuration": "[Kr]4d5s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "49": {
+        "name": "Indium",
+        "symbol": "In",
+        "Z": "49",
+        "atomic_weight": "114.818",
+        "atomic_radius": "166",
+        "pauling_negativity": "1.78",
+        "electronic_configuration": "[Kr]4d5s²5p¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "50": {
+        "name": "Tin",
+        "symbol": "Sn",
+        "Z": "50",
+        "atomic_weight": "118.71",
+        "atomic_radius": "162",
+        "pauling_negativity": "1.96",
+        "electronic_configuration": "[Kr]4d5s²5p²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "51": {
+        "name": "Antimony",
+        "symbol": "Sb",
+        "Z": "51",
+        "atomic_weight": "121.76",
+        "atomic_radius": "159",
+        "pauling_negativity": "2.05",
+        "electronic_configuration": "[Kr]4d5s²5p³",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "52": {
+        "name": "Tellurium",
+        "symbol": "Te",
+        "Z": "52",
+        "atomic_weight": "127.6",
+        "atomic_radius": "160",
+        "pauling_negativity": "2.1",
+        "electronic_configuration": "[Kr]4d5s²5p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "53": {
+        "name": "Iodine",
+        "symbol": "I",
+        "Z": "53",
+        "atomic_weight": "126.90447",
+        "atomic_radius": "-",
+        "pauling_negativity": "2.66",
+        "electronic_configuration": "[Kr]4d5s²5p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "54": {
+        "name": "Xenon",
+        "symbol": "Xe",
+        "Z": "54",
+        "atomic_weight": "131.29",
+        "atomic_radius": "-",
+        "pauling_negativity": "0.0",
+        "electronic_configuration": "[Kr]4d5s²5p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "55": {
+        "name": "Cesium",
+        "symbol": "Cs",
+        "Z": "55",
+        "atomic_weight": "132.90543",
+        "atomic_radius": "267",
+        "pauling_negativity": "0.79",
+        "electronic_configuration": "[Xe]6s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "56": {
+        "name": "Barium",
+        "symbol": "Ba",
+        "Z": "56",
+        "atomic_weight": "137.327",
+        "atomic_radius": "222",
+        "pauling_negativity": "0.89",
+        "electronic_configuration": "[Xe]6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "57": {
+        "name": "Lanthanum",
+        "symbol": "La",
+        "Z": "57",
+        "atomic_weight": "138.9055",
+        "atomic_radius": "187",
+        "pauling_negativity": "1.1",
+        "electronic_configuration": "[Xe]6d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "58": {
+        "name": "Cerium",
+        "symbol": "Ce",
+        "Z": "58",
+        "atomic_weight": "140.115",
+        "atomic_radius": "181",
+        "pauling_negativity": "1.12",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "59": {
+        "name": "Praseodymium",
+        "symbol": "Pr",
+        "Z": "59",
+        "atomic_weight": "140.90765",
+        "atomic_radius": "182",
+        "pauling_negativity": "1.13",
+        "electronic_configuration": "[Xe]4f³5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "60": {
+        "name": "Neodymium",
+        "symbol": "Nd",
+        "Z": "60",
+        "atomic_weight": "144.24",
+        "atomic_radius": "182",
+        "pauling_negativity": "1.14",
+        "electronic_configuration": "[Xe]4f5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "61": {
+        "name": "Promethium",
+        "symbol": "Pm",
+        "Z": "61",
+        "atomic_weight": "144.9127",
+        "atomic_radius": "-",
+        "pauling_negativity": "0.0",
+        "electronic_configuration": "[Xe]4f5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "62": {
+        "name": "Samarium",
+        "symbol": "Sm",
+        "Z": "62",
+        "atomic_weight": "150.36",
+        "atomic_radius": "181",
+        "pauling_negativity": "1.17",
+        "electronic_configuration": "[Xe]4f5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "63": {
+        "name": "Europium",
+        "symbol": "Eu",
+        "Z": "63",
+        "atomic_weight": "151.965",
+        "atomic_radius": "199",
+        "pauling_negativity": "0.0",
+        "electronic_configuration": "[Xe]4f5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "64": {
+        "name": "Gadolinium",
+        "symbol": "Gd",
+        "Z": "64",
+        "atomic_weight": "157.25",
+        "atomic_radius": "179",
+        "pauling_negativity": "1.2",
+        "electronic_configuration": "[Xe]4f5d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "65": {
+        "name": "Terbium",
+        "symbol": "Tb",
+        "Z": "65",
+        "atomic_weight": "158.92534",
+        "atomic_radius": "180",
+        "pauling_negativity": "1.2",
+        "electronic_configuration": "[Xe]4f5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "66": {
+        "name": "Dysprosium",
+        "symbol": "Dy",
+        "Z": "66",
+        "atomic_weight": "162.5",
+        "atomic_radius": "180",
+        "pauling_negativity": "-",
+        "electronic_configuration": "[Xe]4f5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "67": {
+        "name": "Holmium",
+        "symbol": "Ho",
+        "Z": "67",
+        "atomic_weight": "164.93032",
+        "atomic_radius": "179",
+        "pauling_negativity": "1.23",
+        "electronic_configuration": "[Xe]4f¹¹5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "68": {
+        "name": "Erbium",
+        "symbol": "Er",
+        "Z": "68",
+        "atomic_weight": "167.26",
+        "atomic_radius": "178",
+        "pauling_negativity": "1.24",
+        "electronic_configuration": "[Xe]4f¹²5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "69": {
+        "name": "Thulium",
+        "symbol": "Tm",
+        "Z": "69",
+        "atomic_weight": "168.93421",
+        "atomic_radius": "177",
+        "pauling_negativity": "1.25",
+        "electronic_configuration": "[Xe]4f¹³5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "70": {
+        "name": "Ytterbium",
+        "symbol": "Yb",
+        "Z": "70",
+        "atomic_weight": "173.04",
+        "atomic_radius": "194",
+        "pauling_negativity": "1.1",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "71": {
+        "name": "Lutetium",
+        "symbol": "Lu",
+        "Z": "71",
+        "atomic_weight": "174.967",
+        "atomic_radius": "175",
+        "pauling_negativity": "1.27",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "72": {
+        "name": "Hafnium",
+        "symbol": "Hf",
+        "Z": "72",
+        "atomic_weight": "178.49",
+        "atomic_radius": "167",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Xe]4f¹5d²6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "73": {
+        "name": "Tantalum",
+        "symbol": "Ta",
+        "Z": "73",
+        "atomic_weight": "180.9479",
+        "atomic_radius": "149",
+        "pauling_negativity": "1.5",
+        "electronic_configuration": "[Xe]4f¹5d³6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "74": {
+        "name": "Tungsten",
+        "symbol": "W",
+        "Z": "74",
+        "atomic_weight": "183.84",
+        "atomic_radius": "141",
+        "pauling_negativity": "1.7",
+        "electronic_configuration": "[Xe]4f¹5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "75": {
+        "name": "Rhenium",
+        "symbol": "Re",
+        "Z": "75",
+        "atomic_weight": "186.207",
+        "atomic_radius": "137",
+        "pauling_negativity": "1.9",
+        "electronic_configuration": "[Xe]4f¹5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "76": {
+        "name": "Osmium",
+        "symbol": "Os",
+        "Z": "76",
+        "atomic_weight": "190.23",
+        "atomic_radius": "135",
+        "pauling_negativity": "2.2",
+        "electronic_configuration": "[Xe]4f¹5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "77": {
+        "name": "Iridium",
+        "symbol": "Ir",
+        "Z": "77",
+        "atomic_weight": "192.22",
+        "atomic_radius": "136",
+        "pauling_negativity": "2.2",
+        "electronic_configuration": "[Xe]4f¹5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "78": {
+        "name": "Platinum",
+        "symbol": "Pt",
+        "Z": "78",
+        "atomic_weight": "195.08",
+        "atomic_radius": "139",
+        "pauling_negativity": "2.28",
+        "electronic_configuration": "[Xe]4f¹5d6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "79": {
+        "name": "Gold",
+        "symbol": "Au",
+        "Z": "79",
+        "atomic_weight": "196.96654",
+        "atomic_radius": "146",
+        "pauling_negativity": "2.54",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "80": {
+        "name": "Mercury",
+        "symbol": "Hg",
+        "Z": "80",
+        "atomic_weight": "200.59",
+        "atomic_radius": "157",
+        "pauling_negativity": "2.0",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "81": {
+        "name": "Thallium",
+        "symbol": "Tl",
+        "Z": "81",
+        "atomic_weight": "204.3833",
+        "atomic_radius": "171",
+        "pauling_negativity": "1.62",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²6p¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "82": {
+        "name": "Lead",
+        "symbol": "Pb",
+        "Z": "82",
+        "atomic_weight": "207.2",
+        "atomic_radius": "175",
+        "pauling_negativity": "1.8",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²6p²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "83": {
+        "name": "Bismuth",
+        "symbol": "Bi",
+        "Z": "83",
+        "atomic_weight": "208.98037",
+        "atomic_radius": "170",
+        "pauling_negativity": "2.02",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²6p³",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "84": {
+        "name": "Polonium",
+        "symbol": "Po",
+        "Z": "84",
+        "atomic_weight": "208.9824",
+        "atomic_radius": "176",
+        "pauling_negativity": "2.0",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²6p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "85": {
+        "name": "Astatine",
+        "symbol": "At",
+        "Z": "85",
+        "atomic_weight": "209.9871",
+        "atomic_radius": "-",
+        "pauling_negativity": "2.2",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²6p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "86": {
+        "name": "Radon",
+        "symbol": "Rn",
+        "Z": "86",
+        "atomic_weight": "222.0176",
+        "atomic_radius": "-",
+        "pauling_negativity": "-",
+        "electronic_configuration": "[Xe]4f¹5d¹6s²6p",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "87": {
+        "name": "Francium",
+        "symbol": "Fr",
+        "Z": "87",
+        "atomic_weight": "223.0197",
+        "atomic_radius": "-",
+        "pauling_negativity": "0.7",
+        "electronic_configuration": "[Rn]7s¹",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "88": {
+        "name": "Radium",
+        "symbol": "Ra",
+        "Z": "88",
+        "atomic_weight": "226.0254",
+        "atomic_radius": "-",
+        "pauling_negativity": "0.9",
+        "electronic_configuration": "[Rn]7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "89": {
+        "name": "Actinium",
+        "symbol": "Ac",
+        "Z": "89",
+        "atomic_weight": "227.0278",
+        "atomic_radius": "188",
+        "pauling_negativity": "1.1",
+        "electronic_configuration": "[Rn]6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "90": {
+        "name": "Thorium",
+        "symbol": "Th",
+        "Z": "90",
+        "atomic_weight": "232.0381",
+        "atomic_radius": "180",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "91": {
+        "name": "Protactinium",
+        "symbol": "Pa",
+        "Z": "91",
+        "atomic_weight": "231.03588",
+        "atomic_radius": "161",
+        "pauling_negativity": "1.5",
+        "electronic_configuration": "[Rn]5f²6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "92": {
+        "name": "Uranium",
+        "symbol": "U",
+        "Z": "92",
+        "atomic_weight": "238.0289",
+        "atomic_radius": "138",
+        "pauling_negativity": "1.38",
+        "electronic_configuration": "[Rn]5f³6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "93": {
+        "name": "Neptunium",
+        "symbol": "Np",
+        "Z": "93",
+        "atomic_weight": "237.048",
+        "atomic_radius": "130",
+        "pauling_negativity": "1.36",
+        "electronic_configuration": "[Rn]5f6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "94": {
+        "name": "Plutonium",
+        "symbol": "Pu",
+        "Z": "94",
+        "atomic_weight": "244.0642",
+        "atomic_radius": "151",
+        "pauling_negativity": "1.28",
+        "electronic_configuration": "[Rn]5f6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "95": {
+        "name": "Americium",
+        "symbol": "Am",
+        "Z": "95",
+        "atomic_weight": "243.0614",
+        "atomic_radius": "173",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "96": {
+        "name": "Curium",
+        "symbol": "Cm",
+        "Z": "96",
+        "atomic_weight": "247.0703",
+        "atomic_radius": "299",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "97": {
+        "name": "Berkelium",
+        "symbol": "Bk",
+        "Z": "97",
+        "atomic_weight": "247.0703",
+        "atomic_radius": "297",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "98": {
+        "name": "Californium",
+        "symbol": "Cf",
+        "Z": "98",
+        "atomic_weight": "251.0796",
+        "atomic_radius": "295",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f¹6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "99": {
+        "name": "Einsteinium",
+        "symbol": "Es",
+        "Z": "99",
+        "atomic_weight": "252.083",
+        "atomic_radius": "292",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f¹¹6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "100": {
+        "name": "Fermium",
+        "symbol": "Fm",
+        "Z": "100",
+        "atomic_weight": "257.0951",
+        "atomic_radius": "290",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f¹²6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "101": {
+        "name": "Mendelevium",
+        "symbol": "Md",
+        "Z": "101",
+        "atomic_weight": "258.1",
+        "atomic_radius": "287",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f¹³6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "102": {
+        "name": "Nobelium",
+        "symbol": "No",
+        "Z": "102",
+        "atomic_weight": "259.1009",
+        "atomic_radius": "285",
+        "pauling_negativity": "1.3",
+        "electronic_configuration": "[Rn]5f¹6d7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "103": {
+        "name": "Lawrencium",
+        "symbol": "Lr",
+        "Z": "103",
+        "atomic_weight": "262.11",
+        "atomic_radius": "282",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "[Rn]5f¹6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "104": {
+        "name": "Rutherfordium",
+        "symbol": "Rf",
+        "Z": "104",
+        "atomic_weight": "[261]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "[Rn]5f¹6d²7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "105": {
+        "name": "Dubnium",
+        "symbol": "Db",
+        "Z": "105",
+        "atomic_weight": "[262]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "[Rn]5f¹6d³6s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "106": {
+        "name": "Seaborgium",
+        "symbol": "Sg",
+        "Z": "106",
+        "atomic_weight": "[266]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "[Rn]5f¹6d¹7s²",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "107": {
+        "name": "Bohrium",
+        "symbol": "Bh",
+        "Z": "107",
+        "atomic_weight": "[264]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "n/a",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "108": {
+        "name": "Hassium",
+        "symbol": "Hs",
+        "Z": "108",
+        "atomic_weight": "[269]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "n/a",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "109": {
+        "name": "Meitnerium",
+        "symbol": "Mt",
+        "Z": "109",
+        "atomic_weight": "[268]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "n/a",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "110": {
+        "name": "Ununnilium",
+        "symbol": "Uun",
+        "Z": "110",
+        "atomic_weight": "[269]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "n/a",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "111": {
+        "name": "Unununium",
+        "symbol": "Uuu",
+        "Z": "111",
+        "atomic_weight": "[272]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "n/a",
+        "Default" : {
+        
+        },
+        "Isotopes": {
+        
+        }
+    },
+    "112": {
+        "name": "Ununbium",
+        "symbol": "Uub",
+        "Z": "112",
+        "atomic_weight": "[277]",
+        "atomic_radius": "n/a",
+        "pauling_negativity": "n/a",
+        "electronic_configuration": "n/a",
+        "Default" : {
+		
+		},"Isotopes": {
+        
+        }
+	}
+}
