@@ -27,10 +27,8 @@ int AddIn_main(int isAppli, unsigned short OptionNum)
 	draw_table();
 	while(1) {
 		//o getkey espera pela chave. (As chaves sao guardadas numa queue ate serem pedidas pelo GetKey).
-		
 		GetKey(&key);
 		usekey(&key);
-		
 		if (key == KEY_CHAR_0) break;
 	}
     return 1;

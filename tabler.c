@@ -130,6 +130,6 @@ void draw_table() {
 	locate(1,8);
 	Print("                     ");
 	locate(1,8);
-	sprintf(verb, "Z = %d", ptable[find_elem(c,l)].Z);
+	sprintf(verb, "%*s", 21, ptable[find_elem(c,l)].e_config);
 	Print(verb);
 }

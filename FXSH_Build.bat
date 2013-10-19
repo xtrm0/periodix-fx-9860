@@ -10,7 +10,7 @@ if exist FXADDINror.bin  del FXADDINror.bin
 cd ..
 if not exist debug\FXADDINror.bin  goto error
 
-"C:\CASIO\fx9860SDK\Tools\MakeAddinHeader363.exe" "C:\c9860proj\periodix"
+"C:\CASIO\fx9860SDK\Tools\MakeAddinHeader363.exe" "C:\c9860proj\periodix-fx-9860"
 if not exist PERIODIX.G1A  goto error
 echo Build has completed.
 goto end
