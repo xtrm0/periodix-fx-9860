@@ -94,10 +94,12 @@ void usekey(unsigned int * key) {
 		}
 		if ((*key)==KEY_CTRL_F3) {
 			l1 = (l1+1)%PROPER_N;
+			drawmode=0;
 		}
 		if ((*key)==KEY_CTRL_F4) {
 			l1 = (l1-1);
 			if (l1==-1) l1=PROPER_N-1;
+			drawmode=0;
 		}
 		if ((*key)==KEY_CTRL_F5) {
 			if (l>=1 && l<=7) c=1;
@@ -110,6 +112,13 @@ void usekey(unsigned int * key) {
 		if ((*key)==KEY_CTRL_EXE) {
 			//TODO: mostrar a informacao sobre o elemento
 			menu = 4;
+		}
+		if ((*key)==KEY_CTRL_OPTN) {
+			if (drawmode==0 && (l1==0 || l1==1)) {
+				drawmode=1;
+			} else {
+				drawmode=0;
+			}
 		}
 		if ((*key)==KEY_CTRL_EXIT) {
 			*key = KEY_CHAR_FRAC;
@@ -153,6 +162,7 @@ void usekey(unsigned int * key) {
 			//TODO
 			menu = 1;
 			l1 = l2; // atualiza a propriedade a mostrar
+			drawmode=0;
 		}
 	} else if (menu==4) {
 		if ((*key)==KEY_CTRL_UP) {
@@ -191,6 +201,7 @@ int find_elem(int x, int y) {
 void draw_table() {
 	int i, j;
 	float mi, ma;//minimos e maximos para o valor a representar
+	int x1,x2,x3;
 	unsigned char E;
 	int z;
 	unsigned char verb[23];
@@ -231,10 +242,10 @@ void draw_table() {
 		mi = 1000000;
 		ma = -1000000;
 		for (i=1; i<=118; i++) {
-			if (l0==0) {
+			if (l1==0) {
 				mi = min(mi, ptable[i].Z);
 				ma = max(ma, ptable[i].Z);
-			} else if (l==1) {
+			} else if (l1==1) {
 				mi = min(mi, ptable[i].a_w);
 				ma = max(ma, ptable[i].a_w);
 			}
@@ -244,13 +255,44 @@ void draw_table() {
 			E='0'+l0+i-1; PrintC(&E);
 			for (j=1; j<=7; j++) { //para cada grupo
 				z = find_elem(c0+j-1, l0+i-1);
-				if(z!=0 && (l0+i-1!=l || c0+j-1!=c)) {
+				if(z!=0) {
 					ML_rectangle(8+(j-1)*17,8+(i-1)*8,8+j*17,8+i*8,1,ML_BLACK,ML_WHITE); 
-				} else if (l0+i-1==l && c0+j-1==c) {
-					ML_rectangle(8+(j-1)*17,8+(i-1)*8,8+j*17,8+i*8,1,ML_BLACK,ML_BLACK); 
+					if (l1==0) {
+						if (ptable[z].Z>0) {
+							x1 = (ptable[z].Z/ma)*343; //antes de mais normalizar o valor que temos para um valor inteiro entre 0 e 7*7*7=343
+							x3 = (x1%49)%7;
+							x2 = (x1%49)/7;
+							x1 = x1/49;
+						} else if (ptable[z].Z<0){
+							x1 = (ptable[z].Z/mi)*343; //antes de mais normalizar o valor que temos para um valor inteiro entre 0 e 7*7*7=343
+							x3 = (x1%49)%7;
+							x2 = (x1%49)/7;
+							x1 = x1/49;
+						}	
+					} else if (l1==1) {
+						if (ptable[z].Z>0) {
+							x1 = (ptable[z].Z/ma)*343; //antes de mais normalizar o valor que temos para um valor inteiro entre 0 e 7*7*7=343
+							x3 = (x1%49)%7;
+							x2 = (x1%49)/7;
+							x1 = x1/49;
+						} else if (ptable[z].Z<0){
+							x1 = (ptable[z].Z/mi)*343; //antes de mais normalizar o valor que temos para um valor inteiro entre 0 e 7*7*7=343
+							x3 = (x1%49)%7;
+							x2 = (x1%49)/7;
+							x1 = x1/49;
+						}
+					}
+					
+					ML_rectangle(8+(j-1)*17,8+(i-1)*8,8+(j-1)*17+4,8+(i-1)*8+4,0,0,ML_BLACK);
+					ML_rectangle(8+(j-1)*17+5,8+(i-1)*8+(8-x1),8+(j-1)*17+8,8+(i-1)*8+8,0,0,ML_BLACK);
+					ML_rectangle(8+(j-1)*17+9,8+(i-1)*8+(8-x2),8+(j-1)*17+12,8+(i-1)*8+8,0,0,ML_BLACK);
+					ML_rectangle(8+(j-1)*17+13,8+(i-1)*8+(8-x3),8+(j-1)*17+17,8+(i-1)*8+8,0,0,ML_BLACK);
 				} else {
 					ML_rectangle(9+(j-1)*17,9+(i-1)*8,8+j*17-1,8+i*8-1,0,0,ML_WHITE);  
 				}
+				if (l0+i-1==l && c0+j-1==c) {
+					ML_rectangle(8+(j-1)*17,8+(i-1)*8,8+j*17,8+i*8,2,ML_XOR,ML_TRANSPARENT); 
+				} 
 			}
 		}
 	}
@@ -286,7 +328,7 @@ void draw_elem() {
 	sprintf(verb, "%c%c%d:%*s\0", ptable[find_elem(c,l)].X, ptable[find_elem(c,l)].x, ptable[find_elem(c,l)].Z, 13, elemnames[find_elem(c,l)]);
 	Print(verb);
 	locate(2,3);
-	sprintf(verb, "W = %.6f\0", ptable[find_elem(c,l)].a_w);
+	sprintf(verb, "Ar  = %.8f\0", ptable[find_elem(c,l)].a_w);
 	Print(verb);
 	locate(2,4);
 	sprintf(verb, "E_i = %.6f\0", ptable[find_elem(c,l)].Ei);
