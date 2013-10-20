@@ -37,10 +37,14 @@ def gene(j):
     elem''' + i + '''.a_w=''' + data[i]["atomic_weight"] +''';
     strncpy(elemnames[''' + i + '''], "''' + data[i]["name"] +'''", sizeof(char)*17);
     elemnames[''' + i + '''][16]=0;
-    strncpy(elem''' + i + '''.e_config, "''' + data[i]["electronic_configuration"] +'''", sizeof(elem''' + i + '''.e_config)-1);
-    elem''' + i + '''.e_config[21]=0;
+    strncpy(elemconfig[''' + i + '''], "''' + data[i]["electronic_configuration"] +'''", sizeof(char)*21);
+    elemconfig[''' + i + '''][21]=0;
     elem''' + i + ".X='" + data[i]["symbol"][0] +"'" + ''';
     elem''' + i + ".x='" + (data[i]["symbol"][1] if len(data[i]["symbol"])==2 else ''' ''') +"'" + ''';
+    elem''' + i + '''.Ei=''' + (data[i]["ionization_potential"] if data[i]["ionization_potential"]!='na' else '0') +''';
+    elem''' + i + '''.Eae=''' + data[i]["electron_afinity"] +''';
+    elem''' + i + '''.En=''' + (data[i]["pauling_negativity"] if data[i]["pauling_negativity"]!='na' else '0') +''';
+    elem''' + i + '''.r=''' + (data[i]["atomic_radius"] if data[i]["atomic_radius"]!='na' else '0') +''';
     elem''' + i + '''.g=''' + group[j] +''';
     elem''' + i + '''.p=''' + period[j] +''';
     elem''' + i + ".b='" + block[j] +"';")

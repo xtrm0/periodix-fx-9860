@@ -3,7 +3,7 @@
 int c, l; //coluna e linha da tabela periodica representativa selecionadas
 int l0, c0; //posicao do elemento que esta mais acima e a esquerda no ecra.
 int menu; //especifica em que menu esta (1=tabela,2=menu1,3-menu2(informacao), 4-informacao sobre o elemento)
-int l1, l2, l3; //indica em que opcao esta nesse menu. l1 representa o modo em que esta a tabela (normal ou l3)
+int l1, l2, l3, l4; //indica em que opcao esta nesse menu. l1 representa o modo em que esta a tabela (normal ou l3)
 int showtype; //escrever o Z ou o valor
 int drawmode; //desenhar o nome ou o valor
 void tabler_start() {
@@ -12,7 +12,7 @@ void tabler_start() {
 	menu = 1;
 	showtype = 0;
 	drawmode = 0;
-	l1=0; l2=0; l3=0;
+	l1=0; l2=0; l3=0; l4=0;
 	Bdisp_AllClr_DDVRAM();
 	ML_clear_vram();
 	ML_clear_screen();
@@ -96,7 +96,16 @@ void usekey(unsigned int * key) {
 			l1 = (l1+1)%PROPER_N;
 		}
 		if ((*key)==KEY_CTRL_F4) {
-			l1 = (l1-1)%PROPER_N;
+			l1 = (l1-1);
+			if (l1==-1) l1=PROPER_N-1;
+		}
+		if ((*key)==KEY_CTRL_F5) {
+			if (l>=1 && l<=7) c=1;
+			else c=3;
+		}
+		if ((*key)==KEY_CTRL_F6) {
+			if (l>=1 && l<=7) c=18;
+			else c=17;
 		}
 		if ((*key)==KEY_CTRL_EXE) {
 			//TODO: mostrar a informacao sobre o elemento
@@ -181,10 +190,12 @@ int find_elem(int x, int y) {
 
 void draw_table() {
 	int i, j;
+	float mi, ma;//minimos e maximos para o valor a representar
 	unsigned char E;
 	int z;
-	unsigned char verb[22];
+	unsigned char verb[23];
 	ML_clear_screen();
+	ML_rectangle(0,0,127,127,0,0,ML_WHITE);
 		
 	locate(1,1);
 	for (j=0; j<7; j++) {
@@ -198,20 +209,48 @@ void draw_table() {
 			E='0'+((j+c0)%10); PrintC(&E);
 		}
 	}
-	for (i=1; i<=6; i++) { //para cada periodo
-		locate(1,i+1);
-		E='0'+l0+i-1; PrintC(&E);
-		for (j=1; j<=7; j++) { //para cada grupo
-			//usar isto depois para o coiso selecionado:
-			//ML_rectangle((i-1)*16,(j-1)*8,i*16,j*8,0,0,ML_XOR); 
-			if (j!=1) {E=' '; PrintC(&E);}
-			z = find_elem(c0+j-1, l0+i-1);
-			if (l0+i-1==l && c0+j-1==c) {
-				E=ptable[z].X; PrintRevC(&E);
-				E=ptable[z].x; PrintRevC(&E);
-			} else {
-				E=ptable[z].X; PrintC(&E);
-				E=ptable[z].x; PrintC(&E);
+	if (drawmode==0) {
+		for (i=1; i<=6; i++) { //para cada periodo
+			locate(1,i+1);
+			E='0'+l0+i-1; PrintC(&E);
+			for (j=1; j<=7; j++) { //para cada grupo
+				//usar isto depois para o coiso selecionado:
+				//ML_rectangle((i-1)*16,(j-1)*8,i*16,j*8,0,0,ML_XOR); 
+				if (j!=1) {E=' '; PrintC(&E);}
+				z = find_elem(c0+j-1, l0+i-1);
+				if (l0+i-1==l && c0+j-1==c) {
+					E=ptable[z].X; PrintRevC(&E);
+					E=ptable[z].x; PrintRevC(&E);
+				} else {
+					E=ptable[z].X; PrintC(&E);
+					E=ptable[z].x; PrintC(&E);
+				}
+			}
+		}
+	} else if(drawmode==1) {
+		mi = 1000000;
+		ma = -1000000;
+		for (i=1; i<=118; i++) {
+			if (l0==0) {
+				mi = min(mi, ptable[i].Z);
+				ma = max(ma, ptable[i].Z);
+			} else if (l==1) {
+				mi = min(mi, ptable[i].a_w);
+				ma = max(ma, ptable[i].a_w);
+			}
+		}
+		for (i=1; i<=6; i++) { //para cada periodo
+			locate(1,i+1);
+			E='0'+l0+i-1; PrintC(&E);
+			for (j=1; j<=7; j++) { //para cada grupo
+				z = find_elem(c0+j-1, l0+i-1);
+				if(z!=0 && (l0+i-1!=l || c0+j-1!=c)) {
+					ML_rectangle(8+(j-1)*17,8+(i-1)*8,8+j*17,8+i*8,1,ML_BLACK,ML_WHITE); 
+				} else if (l0+i-1==l && c0+j-1==c) {
+					ML_rectangle(8+(j-1)*17,8+(i-1)*8,8+j*17,8+i*8,1,ML_BLACK,ML_BLACK); 
+				} else {
+					ML_rectangle(9+(j-1)*17,9+(i-1)*8,8+j*17-1,8+i*8-1,0,0,ML_WHITE);  
+				}
 			}
 		}
 	}
@@ -225,8 +264,14 @@ void draw_table() {
 		} else if (l1==1) {
 			sprintf(verb, "Ar(%d) = %.6f\0", find_elem(c,l), ptable[find_elem(c,l)].a_w);
 		} else if (l1==2) {
-			sprintf(verb, "%*s\0", 21, ptable[find_elem(c,l)].e_config);
-		} 	
+			sprintf(verb, "%s\0", elemconfig[find_elem(c,l)]);
+		} else if (l1==3) {
+			sprintf(verb, "Ei(%d) = %.6f\0", find_elem(c,l), ptable[find_elem(c,l)].Ei);
+		} else if (l1==4) {
+			sprintf(verb, "Eae(%d) = %.6f\0", find_elem(c,l), ptable[find_elem(c,l)].Eae);
+		} else if (l1==5) {
+			sprintf(verb, "En(%d) = %.6f\0", find_elem(c,l), ptable[find_elem(c,l)].En);
+		} 		
 	} else if (showtype==1) {
 		sprintf(verb, "Z = %d\0", ptable[find_elem(c,l)].Z);
 	}
@@ -238,13 +283,19 @@ void draw_elem() {
 	unsigned char verb[22];
 	ML_rectangle(5, 6, 121, 57, 1, ML_BLACK, ML_WHITE);
 	locate(2,2);
-	sprintf(verb, "%c%c: %*s\0", ptable[find_elem(c,l)].X, ptable[find_elem(c,l)].x, 14, elemnames[find_elem(c,l)]);
+	sprintf(verb, "%c%c%d:%*s\0", ptable[find_elem(c,l)].X, ptable[find_elem(c,l)].x, ptable[find_elem(c,l)].Z, 13, elemnames[find_elem(c,l)]);
 	Print(verb);
 	locate(2,3);
-	sprintf(verb, "Z = %d\0", ptable[find_elem(c,l)].Z);
+	sprintf(verb, "W = %.6f\0", ptable[find_elem(c,l)].a_w);
 	Print(verb);
 	locate(2,4);
-	sprintf(verb, "W = %.6f\0", ptable[find_elem(c,l)].a_w);
+	sprintf(verb, "E_i = %.6f\0", ptable[find_elem(c,l)].Ei);
+	Print(verb);
+	locate(2,5);
+	sprintf(verb, "Eae = %.6f\0", ptable[find_elem(c,l)].Eae);
+	Print(verb);
+	locate(2,6);
+	sprintf(verb, "E_n = %.6f\0", ptable[find_elem(c,l)].En);
 	Print(verb);
 	ML_rectangle(5, 6, 121, 57, 1, ML_BLACK, ML_TRANSPARENT);
 	return;

@@ -4,7 +4,9 @@
 #include <stdlib.h>
 #include "fxlib.h"
 #include "MonochromeLib.h"
-#define PROPER_N 3
+#define PROPER_N 6
+#define min(a, b) ((a) > (b) ? (b) : (a))
+#define max(a, b) ((a) < (b) ? (b) : (a))
 
 void tabler_start();
 void draw_table();

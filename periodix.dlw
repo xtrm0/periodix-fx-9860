@@ -2,7 +2,7 @@
 
 [_1]
 Type=5
-Order=1
+Order=2
 Top=12
 Left=2232
 Height=4740
@@ -13,11 +13,11 @@ OptionA=0
 
 [_2]
 Type=1
-Order=2
+Order=0
 Top=12
 Left=7800
-Height=4740
-Width=5532
+Height=4716
+Width=5508
 State=0
 Flags=00000000
 OptionA=12
@@ -91,7 +91,7 @@ OptionA=0
 
 [_9]
 Type=15
-Order=0
+Order=1
 Top=1176
 Left=4488
 Height=7536
