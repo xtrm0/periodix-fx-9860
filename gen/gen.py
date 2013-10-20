@@ -21,30 +21,58 @@ for i in data.keys():
     a.append(int(i))
 a=sorted(a)
 f1.write('''#ifndef ELEMZ_H
-#define ELEMEZ_H
-void gen_elements() {''')
-for i in range(1,119):
-    f1.write('''
+#define ELEMZ_H
+''')
+
+def pregen(a, b, c):
+    f1.write('''void gen_elements'''+str(c)+'''() {''')
+    for i in range(a,b):
+        f1.write('''
     struct elem elem''' + str(i) + ''';''')
-    
-for j in a[1:119]:
+        
+def gene(j):
     i=u""+str(j)
     f1.write('''
     elem''' + i + '''.Z=''' + i +''';
     elem''' + i + '''.a_w=''' + data[i]["atomic_weight"] +''';
+    strncpy(elemnames[''' + i + '''], "''' + data[i]["name"] +'''", sizeof(char)*17);
+    elemnames[''' + i + '''][16]=0;
     strncpy(elem''' + i + '''.e_config, "''' + data[i]["electronic_configuration"] +'''", sizeof(elem''' + i + '''.e_config)-1);
-    elem''' + i + '''.e_config[29]=0;
+    elem''' + i + '''.e_config[21]=0;
     elem''' + i + ".X='" + data[i]["symbol"][0] +"'" + ''';
     elem''' + i + ".x='" + (data[i]["symbol"][1] if len(data[i]["symbol"])==2 else ''' ''') +"'" + ''';
     elem''' + i + '''.g=''' + group[j] +''';
     elem''' + i + '''.p=''' + period[j] +''';
     elem''' + i + ".b='" + block[j] +"';")
 
-for i in range(1,119):
-    f1.write('''ptable[''' + str(i) + '''] = elem''' + str(i) + ";" + '''
+def postgen(a,b):
+    for i in range(a,b):
+        f1.write('''
+    ptable[''' + str(i) + '''] = elem''' + str(i) + ";")
+    f1.write('''}
 ''')
 
-f1.write('''}
+pregen(1,119,1)
+for j in a[1:119]:
+    gene(j)
+postgen(1,119)
+
+#pregen(30,60,2)
+#for j in a[30:60]:
+#    gene(j)
+#postgen(30,60)
+
+#pregen(60,90,3)
+#for j in a[60:90]:
+#    gene(j)
+#postgen(60,90)
+
+#pregen(90,119,4)
+#for j in a[90:119]:
+#    gene(j)
+#postgen(90,119)
+
+f1.write('''
 #endif
 ''')
 f1.close()

@@ -8,11 +8,13 @@ struct elem{
 	int Z; 
 	double a_w;
 	char X, x; // letras do nome
-	char e_config[30];
+	char e_config[22];
 	int g, p; //grupo e periodo
 	char b; //bloco
+	long int a,c,d,e; //TODO: REMOVE THIS TO COMPILE RELEASES; servem so para avisar quando estiver a ficar com pouco espaco para alocar
 };
 
+char ** elemnames;
 struct elem ptable[120]; //0 e 119 sao para offset
 
 
@@ -22,7 +24,12 @@ struct elem ptable[120]; //0 e 119 sao para offset
 void initialize_elements() {
 	struct elem elem0;
 	struct elem elem119;
+	int i;
 	//elem0 tem os minimizantes e elem119 os maximizantes
+	elemnames = (char **)malloc(120 * sizeof(char *));
+	for(i=0; i<120; i++ ) {
+		elemnames[i] = (char*)malloc(17 * sizeof(char));
+	}
 	elem0.Z = 0;
 	elem0.X = ' ';
 	elem0.x = ' '; 
@@ -32,7 +39,7 @@ void initialize_elements() {
 	elem119.X = ' ';
 	elem119.x = ' ';
 	ptable[119] = elem119;
-	gen_elements();
+	gen_elements1();
 }
 
 

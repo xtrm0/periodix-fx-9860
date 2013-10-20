@@ -18,7 +18,13 @@
 /******************************/
 /** Dependencies management  **/
 /******************************/
-#define ML_ALL
+#define ML_XAPP
+#ifdef ML_XAPP
+	#define ML_CLEAR_VRAM
+	#define ML_CLEAR_SCREEN
+	#define ML_DISPLAY_VRAM
+	#define ML_RECTANGLE
+#endif
 
 #ifdef ML_ALL
 	#define ML_CLEAR_VRAM
